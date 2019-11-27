@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "8fd776fd-6099-46bd-98cc-abb719503b4f",
+		"name": "Microservices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "currencyConversionService",
+			"item": [
+				{
+					"name": "convertCurrency",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8100/currency-converter/from/USD/to/INR/quantity/100",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"currency-converter",
+								"from",
+								"USD",
+								"to",
+								"INR",
+								"quantity",
+								"100"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ZuulConvertCurrency",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8100/currency-converter/from/USD/to/INR/quantity/100",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"currency-converter",
+								"from",
+								"USD",
+								"to",
+								"INR",
+								"quantity",
+								"100"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "convertCurrency FeignClient",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8100/currency-converter/from/USD/to/INR/quantity/100",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"currency-converter",
+								"from",
+								"USD",
+								"to",
+								"INR",
+								"quantity",
+								"100"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ZuulProxyConvertCurrency FeignClient",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8100/currency-converter/from/USD/to/INR/quantity/100",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"currency-converter",
+								"from",
+								"USD",
+								"to",
+								"INR",
+								"quantity",
+								"100"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
